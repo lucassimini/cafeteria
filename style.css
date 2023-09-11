@@ -1,0 +1,401 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'bar';
+    src: url('./fonts/BacasimeAntique-Regular.ttf');
+  }
+
+body{
+    font-family: bar, 'Times New Roman', Times, serif;
+}
+
+/* Header section  */
+
+.hcontainer{
+    background-image: url('./images/banner-section/banner-G.jpg');
+    background-size: cover;
+}
+
+header{
+    padding: 10px 3%; 
+    overflow: hidden;
+    position: relative;
+    text-align: center; 
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    width: 90px;
+    border-radius: 50%;
+    float: left;
+}
+
+nav{
+    position: absolute;
+    width: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+nav ul{
+    list-style: none;
+    font-size: 22px;
+}
+
+nav li{  
+    display: inline;
+    margin: 0 10px;
+    padding: 5px;
+    color: black
+}
+
+nav li:hover{
+    border-radius: 10px;
+    color: white;
+    background-color: #C7A778;
+}
+
+.social-media{
+    position: absolute;
+    top: 50%;
+    right: 3%;
+    transform: translateY(-50%);
+}
+
+
+.social-icons{
+    width: 30px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.social-icons{
+    width: 30opx;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+/* Banner section */
+
+.banner{
+    height: 560px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner a{
+    font-size: 60px;
+    color: white;;
+    background-color: #D99255;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.5);
+}
+
+.banner a:hover{
+    background-color: black ;
+}
+
+/* More orders section  */
+
+#more-orders{
+    padding: 0px 10%;
+    text-align: center;
+    background: #C7A778;
+    color: white;
+}
+
+#more-orders h2{
+    font-size: 40px;
+    font-weight: normal;
+    padding: 20px;    
+}
+
+#more-orders img{
+    width: 300px;
+    height: 400px;
+    margin-right: 15px;
+    margin-left: 15px;
+    border-radius: 20px;
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.5);
+}
+
+#more-orders ul{
+    list-style: none;
+}
+
+#more-orders li{
+    display: inline-block;
+    margin-bottom: 40px;
+}
+
+#more-orders p{
+    font-size: 30px;
+    margin-top: 5px;
+}
+
+/* About us section  */
+
+#about-us{
+    position: relative;
+    padding: 50px;
+    height: 400px;
+}
+
+
+.brown-rectangle{
+    position: absolute;
+    left: 12%;
+    height: 400px;
+    width: 340px;
+    background-color: #C7A778;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.brown-rectangle img{
+    height: 405px;
+    width: 310px;
+    position: absolute;
+    top: 20px;
+    right: -40px;
+    border-radius: 20px;
+    box-shadow: -4px 4px 15px 4px rgba(0, 0, 0, 0.2);
+}
+
+.text{
+    position: absolute;
+    right: 12%;
+    width: 40%;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.text h2{
+    font-size: 40px;
+    font-weight: normal;
+    margin-bottom: 20px;    
+}
+
+.text p{
+    margin-bottom: 20px;
+}
+
+/* footer section  */
+
+footer{
+    height: 150px;
+    background-color: #3C2F26;
+    margin-top: 10px;
+    text-align: center;
+    padding: 40px;
+    position: relative;
+}
+
+.container{
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contact{
+    color: white;
+    float: left;
+    text-align: left;
+}
+
+.contact h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.contact a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.contact address {
+    display:none;
+}
+
+.location{
+    color: white;
+    float: right;
+    text-align: left;
+}
+
+.location h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.location p, address{
+    font-size: 20px;
+    font-style: normal;
+}
+
+/* Botões finais */
+
+.back{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    background-color: #D99255;
+    border-radius: 20px;
+}
+
+.back:hover {
+background-color: black;
+}
+
+.whatsapp{
+    text-decoration: none;
+    color: white;
+    padding: 20px;
+    background-color: #25d366;
+    border-radius: 20px;
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+}
+
+.whatsapp:hover{
+    background-color: black;
+}
+
+.whatsapp-icon{
+    display: none;
+}
+
+.back-icon{
+    display: none;
+}
+
+@media (max-width: 1077px){
+
+    .hcontainer{
+        background-image: url('./images/banner-section/banner-M.jpg');
+    }
+    
+    #about-us{
+        height: auto;
+    }
+    
+    .brown-rectangle{
+        display: none;
+    }
+
+    .text{
+        margin: auto;
+        position:static;
+        right: 50%;
+        width: 100%;
+    }
+    
+}
+
+@media (max-width: 905px) {
+    nav{
+        display: none;
+    }
+
+    #more-orders{
+        padding: 0px 2%;
+    }
+
+    #more-orders img{
+        width: 200px;
+        height: 268px;
+        margin: 0 10px;
+    }
+
+    #more-orders p{
+        font-size: 18px;
+    }
+
+    #about-us{
+        height: auto;
+    }
+    
+    .whatsapp, .back{
+        display: none;
+    }
+
+    .whatsapp-icon{
+        text-decoration: none;
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        display: block;
+    }
+
+    .whatsapp-icon img{
+        width: 50px;
+    }
+
+    .back-icon{
+        display: block;
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        text-decoration: none;
+        
+    }
+
+    .back-icon img{
+        width: 50px;
+        border-radius: 50%;
+    }
+}
+
+@media (max-width: 685px){
+    .hcontainer{
+        background-image: url('./images/banner-section/banner-P.jpg');
+    }
+
+    #more-orders img{
+        width: 150px;
+        height: 200px;
+    }
+
+    #more-orders p{
+        font-size: 16px;
+    }
+    
+    .location {
+        display: none;
+    }
+    
+    .footer{
+        height: auto;
+        padding: 10px;
+    }
+
+    .contact{
+        margin:auto;
+        float: none;
+        text-align:center;
+    }
+
+    .contact a, .contact address{
+        font-size: 0.9em;
+    }
+
+    .contact address {
+        display: block;
+    }
+
+}

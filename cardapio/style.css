@@ -1,0 +1,187 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'bar';
+    src: url('./fonts/BacasimeAntique-Regular.ttf');
+  }
+
+body{
+    font-family: bar, 'Times New Roman', Times, serif;
+}
+
+/* Header section  */
+
+header{
+    padding: 10px 3%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.logo{
+    width: 90px;
+    border-radius: 50%;
+}
+
+header h1{
+    font-size: 50px;
+    font-weight: bolder;
+    color: #3C2F26;
+}
+
+
+.social-media{
+    display: flex;
+    width: 67px;
+    justify-content: space-between;
+}
+
+.social-icons{
+    width: 30px;
+    border-radius: 50%;
+}
+
+
+/* menu sections */
+
+.order{
+    background-image: url('../images/cadapio/order.png');
+    background-size: cover;
+    height: 668px;
+    width: 33%;
+    background-repeat: no-repeat;
+    float: left;
+    position: relative;
+}
+
+.order a{
+    font-size: 50px;
+    color: white;
+    background-color: #D99255;
+    padding: 10px;
+    border-radius: 20px;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.5);
+}
+
+.order a:hover{
+    background-color: black;
+}
+
+.menu1, .menu2{
+    /* height: 605px; */
+    width: 33%;
+    background-color: #FFE0B3;
+    display: inline-block;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    color: white;
+    text-align: center; 
+    padding: 25px;
+    box-sizing: border-box;
+    color: #3C2F26;
+}
+
+.linha{
+    display: none;
+}
+
+.menu2{
+    float: right;
+}
+
+.menu1 h2, .menu2 h2{
+    font-size: 26px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+.menu1 ul, .menu2 ul{
+    text-align: left;
+    list-style: none;
+    font-size: 20px;
+}
+
+.menu1 li, .menu2 li{
+    margin: 20px 0;
+}
+
+.menu1 p, .menu2 p{
+    font-size: 16px;
+}
+
+.right{
+    float: right;
+}
+
+hr {
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #3C2F26, transparent);
+    margin: 25px 0;
+}
+
+.whatsapp-icon{
+    display: none;
+}
+
+@media (max-width: 835px){
+    body{
+        background-color: #FFE0B3;
+    }
+
+    header{
+        background-color: white;
+    }
+   
+    .logo{
+        width: 60px;
+        border-radius: 50%;
+    }
+    
+    header h1{
+        font-size: 1.9em;
+    }
+    
+    .order{
+        display:none;
+    }
+
+    .menu1, .menu2{
+        float:none;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    .linha{
+        display:block;
+    }
+
+    .whatsapp-icon{
+        text-decoration: none;
+        position: sticky;
+        left: 50px;
+        bottom: 5px;
+        display: block;
+    }
+
+    .whatsapp-icon img{
+        width: 55px;
+    }
+
+}
+
+
+
